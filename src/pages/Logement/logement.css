@@ -1,0 +1,169 @@
+.accommodation-card {
+  border-radius: 8px;
+  font-family: sans-serif;
+  color: #ff6060;
+  max-width: 1240px;
+}
+
+.accommodation-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.accommodation-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #ff6060;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-right: 8px;
+  font-size: 0.8rem;
+}
+
+.host-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: right;
+}
+
+.host-name {
+  color: #ff6060;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.host-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+}
+
+.rating .star {
+  color: #e3e3e3;
+  font-size: 1.2rem;
+}
+
+.rating .filled {
+  color: #ff6060;
+}
+
+.dropdowns {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {     /*******************ça me pete le rendu en mode PC  et si je mets une limite ça me fume le responsive***********************/
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-toggle {
+  width: 100%;
+}
+
+.dropdown-content {
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  color: black;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/****************************************************************Responsive************************************************************/
+
+@media (max-width: 768px) {
+  .accommodation-card {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .accommadation-header {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .dropdowns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+}
