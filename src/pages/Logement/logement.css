@@ -152,10 +152,16 @@
     margin-right: 20px;
   }
 
-  .accommadation-header {
+  .accommodation-header {
     display: flex;
     flex-direction: column;
     
+  }
+
+  .host-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .dropdowns {

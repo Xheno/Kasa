@@ -11,6 +11,7 @@
 
 .dropdown-toggle {
   width: 100%;
+  height: 52px;
   background-color: #ff6060;
   color: white;
   font-weight: bold;
@@ -55,9 +56,12 @@
   .dropdown-toggle {
     position: relative;
     width: 100%;
+    height: 30px;
+    font-size: 14px;
   }
 
   .dropdown-content {
     box-sizing: border-box;
+    font-size: 12px;
   }
 }
