@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import "../style/Dropdown.css";
 
-export default function Dropdown({ title, content }) {
+export default function Dropdown({ className="", title, content }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="dropdown">
+    <div className={`dropdown ${className}`}>
       <button className="dropdown-toggle" onClick={() => setOpen(!open)}>
         <span>{title}</span>
         <span>{open ? '▲' : '▼'}</span>

@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .accommodation-card {
   border-radius: 8px;
   font-family: sans-serif;
@@ -19,7 +25,7 @@
 }
 
 .location {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: black;
 }
 
@@ -80,14 +86,28 @@
   justify-content: space-between;
 }
 
-.dropdown {     /*******************ça me pete le rendu en mode PC  et si je mets une limite ça me fume le responsive***********************/
+.dropdown.dropdown-description {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: start; /*********vérouille la dropdown en position haute*************/
+
+}
+
+.dropdown.dropdown-equipments {
+  /*******************ça me pete le rendu en mode PC  et si je mets une limite ça me fume le responsive***********************/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; /*********vérouille la dropdown en position haute*************/
+
 }
 
 .dropdown-toggle {
   width: 100%;
 }
+
+
 
 .dropdown-content {
   width: 100%;
@@ -155,7 +175,6 @@
   .accommodation-header {
     display: flex;
     flex-direction: column;
-    
   }
 
   .host-rating {

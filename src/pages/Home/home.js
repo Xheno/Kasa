@@ -2,7 +2,6 @@
 import React from "react";
 
 import Banner from "../../components/Banner";
-import Layout from "../../components/Layout";
 import Card from "../../components/Card";
 
 import logements from "../../logements.json";
@@ -11,7 +10,6 @@ import logements from "../../logements.json";
 const Home = () => {
   return (
     <div className="App">
-      <Layout>
         <Banner
           bannerImg="/images/homeBanner.png"
           bannerOpacity={0.6}
@@ -23,7 +21,6 @@ const Home = () => {
             <Card key={logement.id} data={logement} />
           ))}
         </div>
-      </Layout>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import Banner from "../../components/Banner";
-import Layout from "../../components/Layout";
 import DropDown from "../../components/DropDown";
 import "./about.css";
 
@@ -8,7 +7,6 @@ import logements from "../../logements.json";
 const About = () => {
   return (
     <div className="about">
-      <Layout>
         <Banner bannerImg="/images/aboutBanner.png" />
         <div className="dropdown-bg">
           <div className="dropdown-wrapper">
@@ -30,7 +28,6 @@ const About = () => {
             />
           </div>
         </div>
-      </Layout>
     </div>
   );
 };

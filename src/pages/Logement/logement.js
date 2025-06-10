@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router";
-import Layout from "../../components/Layout";
 import logements from "../../logements.json";
 import Dropdown from "../../components/DropDown";
 import "./logement.css";
+import "../../style/Layout.css";
 
 const Logement = () => {
   const { id } = useParams();
@@ -13,9 +13,7 @@ const Logement = () => {
 
   if (!logement) {
     return (
-      <Layout>
         <h2>Logement introuvable</h2>
-      </Layout>
     );
   }
   const {
@@ -65,7 +63,6 @@ const Logement = () => {
   };
 
   return (
-    <Layout>
       <div className="accommodation-card">
         <ImageCarousel pictures={logement.pictures} title={title} />
 
@@ -106,11 +103,10 @@ const Logement = () => {
         </div>
 
         <div className="dropdowns">
-          <Dropdown title="Description" content={description} />
-          <Dropdown title="Équipements" content={equipments} />
+          <Dropdown className="dropdown-description" title="Description" content={description} />
+          <Dropdown className="dropdown-equipments" title="Équipements" content={equipments} />
         </div>
       </div>
-    </Layout>
   );
 };
 

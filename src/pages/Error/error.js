@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../../components/Layout";
+
 
 import "./error.css";
 
 const Error = () => {
   return (
     <div>
-      <Layout>
+
         <div className="error-content">
           <h1 className=" error-h1 flex-center marginLeftRight">404</h1>
           <p className="error-text flex-center marginLeftRight">
@@ -16,7 +16,6 @@ const Error = () => {
             Retourner sur la page d'accueil
           </a>
         </div>
-      </Layout>
     </div>
   );
 };
